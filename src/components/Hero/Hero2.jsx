@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { ArrowRight, Shield, Zap, Users } from 'lucide-react';
-import pushan from '../../assets/img/Hero/Pushan.jpg';
+import pushan from '../../assets/img/Hero/pushan.jpg';
 
 
 const Hero2 = () => {
