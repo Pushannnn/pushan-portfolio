@@ -1,0 +1,13 @@
+@import "tailwindcss";
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom, white, #e0f2fe, #ede9fe);
+  
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
