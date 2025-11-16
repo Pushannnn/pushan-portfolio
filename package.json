@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Pushannnn.github.io/pushan-portfolio",
+  "homepage": "https://www.pushan-maharjan.com.np",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
