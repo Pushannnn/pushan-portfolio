@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrowDown, Sparkles } from 'lucide-react';
 
+
 const Hero = () => {
   const heroRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -101,7 +102,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div ref={heroRef}  className="relative pt-10 pb-15 overflow-hidden min-h-[400px]">
+    <div ref={heroRef} className="relative pt-10 pb-15 overflow-hidden min-h-[400px]">
       {/* Background */}
       <canvas
         ref={canvasRef}
@@ -145,11 +146,20 @@ const Hero = () => {
               Hello mate, Trying to make "Hello World" the new "abc"
             </p>
             {/* Buttons */}
-            <div className="flex flex-wrap justify-center gap-3">
-              <button className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white font-semibold rounded-lg shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/40 transition-all duration-500 transform-gpu hover:scale-105 hover:-translate-y-1">
+            <div className="flex flex-wrap justify-center gap-3 ">
+              <button
+                className="cursor-pointer group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white font-semibold rounded-lg shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/40 transition-all duration-500 transform-gpu hover:scale-105 hover:-translate-y-1"
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/Pushan_Maharjan_CV.pdf";      // your CV file
+                  link.download = "Pushan_Maharjan_CV.pdf";   // downloaded name
+                  link.click();
+                }}
+              >
                 Download CV
                 <ArrowDown className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
+
             </div>
           </div>
         </div>

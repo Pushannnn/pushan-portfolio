@@ -10,7 +10,7 @@ import Project from './components/Project/Project';
 
 const App = () => {
   return (
-    <BrowserRouter basename="/pushan-portfolio">
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={
