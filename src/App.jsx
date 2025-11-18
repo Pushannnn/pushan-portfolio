@@ -11,19 +11,21 @@ import Project from './components/Project/Project';
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <Hero2 />
-            <Feauture />
-            <TechExperties />
-            <Project />
-            <WorkflowSteps />
-          </>
-        } />
-      </Routes>
+      <div className="app-container">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Hero2 />
+              <Feauture />
+              <TechExperties />
+              <Project />
+              <WorkflowSteps />
+            </>
+          } />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
