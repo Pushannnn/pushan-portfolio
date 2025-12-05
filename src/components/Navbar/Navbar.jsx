@@ -168,7 +168,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu - Push Down Style */}
-            <div className={`lg:hidden overflow-hidden transition-all duration-300 border-t border-gray-200 ${mobileMenuOpen ? 'max-h-[800px]' : 'max-h-0'}`}>
+            <div className={`lg:hidden overflow-hidden transition-all duration-300 border-t  ${mobileMenuOpen ? 'max-h-[800px]' : 'max-h-0'}`}>
                 <div className="w-full bg-black">
                     <div className="p-6 max-w-screen-xl mx-auto">
                         <div className="mb-6 pb-4 border-b-2 border-gray-100">
